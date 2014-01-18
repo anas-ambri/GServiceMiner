@@ -4,7 +4,7 @@
   "description": "A library to extract data from the Google maps Control for ASP.NET, as developed by Shabdar Gapta",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/mocha --reporter spec test/test-*.js"
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --reporter spec test/"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,12 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/anas-ambri/GServiceMiner/issues"
+  },
+  "devDependencies": {
+    "should": "~3.0.0",
+    "mocha": "~1.17.0"
+  },
+  "dependencies": {
+    "phantom": "~0.5.4"
   }
 }
