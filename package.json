@@ -1,6 +1,6 @@
 {
-  "name": "GServiceMiner",
-  "version": "0.0.0",
+  "name": "gserviceminer",
+  "version": "0.0.1",
   "description": "A library to extract data from the Google maps Control for ASP.NET, as developed by Shabdar Gapta",
   "main": "index.js",
   "scripts": {
