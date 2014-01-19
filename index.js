@@ -49,21 +49,4 @@ function retrievePoints(page, refresh, cb){
 
 util.inherits(GServiceMiner, events.EventEmitter);
 
-if(module === require.main){
-    var miner = new GServiceMiner("http://shuttle.concordia.ca/Map.aspx");
-    miner.on('data',function(data){
-	var points = data.points.map(function(point){
-	    return {
-		element : point.ID,
-		longitude : point.Longitude,
-		latitude : point.Latitude
-	    };
-	});
-	console.log( 'new data ='+JSON.stringify(points, null, 4) );
-    });
-    miner.on('error', function(){
-	console.log( 'error' );
-    });
-}
-
 module.exports = GServiceMiner;

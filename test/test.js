@@ -1,5 +1,5 @@
 var should = require('should'),
-    GServiceMiner = require('./../lib/');
+    GServiceMiner = require('./../');
 
 var sample_url = 'http://shuttle.concordia.ca/Map.aspx';
 var refresh = 2000;
